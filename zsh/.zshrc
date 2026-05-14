@@ -9,7 +9,6 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export GPG_TTY=$(tty)
 fpath+=~/.zfunc
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -142,7 +141,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 export JAVA_TOOLS_OPTIONS="-Dlog4j2.formatMsgNoLookups=true"
 export GPG_TTY=$(tty)
 
-source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 export PATH=$PATH:/Users/arnavjindal/.spicetify
 export PATH="$(brew --prefix python@3.10)/bin:$PATH"
 
