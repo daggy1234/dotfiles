@@ -1,0 +1,12 @@
+[user]
+	name = Arnav Jindal
+	email = arnav.jindal7@gmail.com
+	signingkey = 2DBADFA44ECF553D
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
+[credential]
+	helper = store
+[http]
+	postBuffer = 157286399
