@@ -1,0 +1,8 @@
+{
+	"settings": {
+		"checkOnSave": true,
+		"check.command": "clippy",
+		// "all" is the literal for --all-features
+		"cargo.features": "all",
+	},
+}

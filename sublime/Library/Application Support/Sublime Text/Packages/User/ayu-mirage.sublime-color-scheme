@@ -1,0 +1,49 @@
+// Layers on top of Packages/ayu/ayu-mirage.sublime-color-scheme.
+// Filename must match the scheme being overridden; rules are appended, not replaced.
+// Semantic token scopes are ALWAYS lowercase: typeParameter -> typeparameter.
+// Requires "semantic_highlighting": true in LSP.sublime-settings.
+{
+	"rules": [
+		// Documented LSP workaround: custom schemes need this for token detection.
+		{ "scope": "meta.semantic-token", "background": "#00000101" },
+
+		// modifier rules first; later rules win, so these sit above the bare types
+		{ "scope": "meta.semantic-token.type", "foreground": "#66D9EF" },
+		{ "scope": "meta.semantic-token.builtintype", "foreground": "#66D9EF" },
+		{ "scope": "meta.semantic-token.struct", "foreground": "#66D9EF" },
+		{ "scope": "meta.semantic-token.typealias", "foreground": "#66D9EF" },
+		{ "scope": "meta.semantic-token.enum", "foreground": "#66D9EF", "font_style": "italic" },
+		{ "scope": "meta.semantic-token.typeparameter", "foreground": "#66D9EF", "font_style": "underline" },
+		{ "scope": "meta.semantic-token.interface", "foreground": "#ff8800" },
+		{ "scope": "meta.semantic-token.property", "foreground": "#e7ffb8" },
+		{ "scope": "meta.semantic-token.enummember", "foreground": "#f397ff" },
+		{ "scope": "meta.semantic-token.namespace", "foreground": "#57ffbf" },
+		{ "scope": "meta.semantic-token.macro", "foreground": "#ffff00", "font_style": "bold" },
+		{ "scope": "meta.semantic-token.lifetime", "foreground": "#ff3b3b" },
+		{ "scope": "meta.semantic-token.attribute", "foreground": "#67DA5A" },
+		{ "scope": "meta.semantic-token.unresolvedreference", "foreground": "#caa87f" },
+
+		{ "scope": "meta.semantic-token.function.defaultlibrary", "foreground": "#A6E22E" },
+		{ "scope": "meta.semantic-token.method.defaultlibrary", "foreground": "#A6E22E" },
+		{ "scope": "meta.semantic-token.variable.static", "foreground": "#A477F6", "font_style": "bold italic" },
+		{ "scope": "meta.semantic-token.variable.constant", "foreground": "#A477F6" },
+
+		{ "scope": "meta.semantic-token.variable.mutable", "font_style": "italic" },
+		{ "scope": "meta.semantic-token.parameter.mutable", "font_style": "italic" },
+		{ "scope": "meta.semantic-token.function.mutable", "foreground": "#ffc039" },
+
+		{ "scope": "meta.semantic-token.variable.consuming", "font_style": "underline" },
+		{ "scope": "meta.semantic-token.parameter.consuming", "font_style": "underline" },
+		{ "scope": "meta.semantic-token.method.consuming", "font_style": "underline" },
+
+		{ "scope": "meta.semantic-token.variable.unsafe", "foreground": "#ff0000", "font_style": "bold" },
+		{ "scope": "meta.semantic-token.function.unsafe", "foreground": "#ff0000", "font_style": "bold" },
+		{ "scope": "meta.semantic-token.method.unsafe", "foreground": "#ff0000", "font_style": "bold" },
+		{ "scope": "meta.semantic-token.operator.unsafe", "foreground": "#ff0000", "font_style": "bold" },
+
+		// no LSP token type for these; fall back to native TextMate scopes
+		{ "scope": "punctuation", "foreground": "#F8F8F2" },
+		{ "scope": "keyword.operator", "foreground": "#F92672" },
+		{ "scope": "keyword.control", "foreground": "#ffff00", "font_style": "bold" },
+	],
+}

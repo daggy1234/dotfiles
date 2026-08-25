@@ -1,0 +1,4 @@
+{
+	// AutoPep8 owns python formatting; stop LSP formatting the same save
+	"lsp_format_on_save": false,
+}

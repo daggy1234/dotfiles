@@ -1,0 +1,22 @@
+{
+	"settings": {
+		"yaml.customTags": [
+			"!And sequence",
+			"!If sequence",
+			"!Not sequence",
+			"!Equals sequence",
+			"!Or sequence",
+			"!FindInMap sequence",
+			"!Base64",
+			"!Join sequence",
+			"!Cidr",
+			"!Ref",
+			"!Sub sequence",
+			"!GetAtt",
+			"!GetAZs",
+			"!ImportValue sequence",
+			"!Select sequence",
+			"!Split sequence",
+		],
+	},
+}

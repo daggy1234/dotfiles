@@ -1,0 +1,230 @@
+{
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Ayu Mirage Bordered",
+    "editor.fontFamily": "JetBrains Mono,Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.letterSpacing": 1.2,
+    "python.languageServer": "Pylance",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "python.showStartPage": false,
+    "prettier.jsxBracketSameLine": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "explorer.confirmDragAndDrop": false,
+    "editor.largeFileOptimizations": false,
+    "rust-analyzer.checkOnSave": true,
+    "rust-analyzer.check.command": "clippy",
+    "rust-analyzer.cargo.allFeatures": true,
+    "files.associations": {
+        "*.rs": "rust",
+        "*.py": "python"
+    },
+    "editor.semanticTokenColorCustomizations": {
+        "enabled": true,
+        "rules": {
+            "builtinType": {
+                "foreground": "#66D9EF",
+                "italic": false
+            },
+            "type": {
+                "foreground": "#66D9EF",
+                "italic": false
+            },
+            "struct": {
+                "foreground": "#66D9EF",
+                "italic": false
+            },
+            "enum": {
+                "foreground": "#66D9EF",
+                "italic": true
+            },
+            "typeParameter": {
+                "foreground": "#66D9EF",
+                "italic": false,
+                "underline": true
+            },
+            "typeAlias": {
+                "foreground": "#66D9EF",
+                "italic": false
+            },
+            "interface": {
+                "foreground": "#ff8800"
+            },
+            "member:rust": {
+                "foreground": "#e7ffb8"
+            },
+            "property": {
+                "foreground": "#e7ffb8"
+            },
+            "function.defaultLibrary": {
+                "foreground": "#A6E22E"
+            },
+            "member.defaultLibrary": {
+                "foreground": "#A6E22E"
+            },
+            "variable.static": {
+                "foreground": "#A477F6",
+                "bold": true,
+                "italic": true
+            },
+            "variable.constant": {
+                "foreground": "#A477F6",
+                "italic": false
+            },
+            "enumMember": {
+                "foreground": "#f397ff"
+            },
+            "namespace": {
+                "foreground": "#57ffbf"
+            },
+            "operator.controlFlow": {
+                "foreground": "#ffff00",
+                "bold": true
+            },
+            "macro": {
+                "foreground": "#ffff00",
+                "bold": true
+            },
+            "lifetime": {
+                "foreground": "#ff3b3b"
+                // "bold": true,
+            },
+            "parameter": {
+                // "foreground": "#F8F8F2",
+                "italic": false
+            },
+            "function.mutable": {
+                "foreground": "#ffc039",
+                "italic": false
+            },
+            "*.consuming": {
+                "underline": true
+            },
+            "*.mutable": {
+                // "foreground": "#fff0ce",
+                "italic": true
+            },
+            "parameter.mutable": {
+                // "foreground": "#ffaac9",
+                "italic": true
+            },
+            "*.unsafe": {
+                "foreground": "#ff0000",
+                "bold": true
+            },
+            "attribute": {
+                "foreground": "#67DA5A"
+            },
+            "selfKeyword": {
+                // "italic": true,
+            },
+            "punctuation": "#F8F8F2",
+            "operator": "#F92672",
+            "operator.unsafe": {
+                "foreground": "#ff0000",
+                "bold": true
+            },
+            "unresolvedReference": "#caa87f"
+        }
+    },
+    "glassit.alpha": 220,
+    "sqltools.useNodeRuntime": true,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "python.insidersChannel": "weekly",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "yaml.customTags": [
+        "!And",
+        "!And sequence",
+        "!If",
+        "!If sequence",
+        "!Not",
+        "!Not sequence",
+        "!Equals",
+        "!Equals sequence",
+        "!Or",
+        "!Or sequence",
+        "!FindInMap",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Join",
+        "!Join sequence",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!Sub sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!ImportValue sequence",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Split sequence"
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8",
+        "editor.formatOnType": true
+    },
+    "python.formatting.provider": "yapf",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "yaml": false,
+        "python": false,
+        "verilog": false
+    },
+    "redhat.telemetry.enabled": true,
+    "cSpell.enableFiletypes": [
+        "!rust"
+    ],
+    "python.defaultInterpreterPath": "/opt/homebrew/opt/python3/libexec/bin/python",
+    "java.debug.settings.console": "internalConsole",
+    "editor.inlineSuggest.enabled": true,
+    "terminal.external.osxExec": "Ghostty.app",
+    "terminal.integrated.fontFamily": "\"MesloLGS NF\"",
+    "git.autofetch": true,
+    "editor.formatOnPaste": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.guides.bracketPairs": true,
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "xml.symbols.maxItemsComputed": 20000,
+    "window.zoomLevel": 1,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "aws.lambda.recentlyUploaded": {
+        "profile:default": {
+            "us-east-2": "hackduke_chron_transloc"
+        }
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "prisma.showPrismaDataPlatformNotification": false,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "haskell.manageHLS": "GHCup",
+    "mdb.mcp.server": "prompt",
+    "[verilog]": {
+        "editor.defaultFormatter": "mshr-h.veriloghdl"
+    },
+    "python.analysis.typeCheckingMode": "standard",
+    "claudeCode.preferredLocation": "panel",
+    "docker.extension.enableComposeLanguageServer": false,
+    "claudeCode.selectedModel": "opus[1m]",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "typescript.experimental.useTsgo": true,
+    "workbench.browser.openLocalhostLinks": false,
+    "editor.formatOnSave": true
+}

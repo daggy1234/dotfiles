@@ -1,15 +1,18 @@
 {
   "lsp_code_actions_on_save": {
-  "source.fixAll.eslint": true,
+    "source.fixAll.eslint": true,
   },
+  "lsp_format_on_save": true,
+  // required for meta.semantic-token.* color scheme rules to apply
+  "semantic_highlighting": true,
   "log_debug": true,
   "log_server": ["panel"],
-	"show_diagnostics_inline": "at-cursor",
-	"clients":{
-		"haskell-language-server": {
-            "enabled": true,
-            "command": ["haskell-language-server-wrapper", "--lsp"],
-            "selector": "source.haskell"
-        }
-	},
+  "show_diagnostics_inline": "at-cursor",
+  "clients": {
+    "haskell-language-server": {
+      "enabled": true,
+      "command": ["haskell-language-server-wrapper", "--lsp"],
+      "selector": "source.haskell"
+    }
+  },
 }

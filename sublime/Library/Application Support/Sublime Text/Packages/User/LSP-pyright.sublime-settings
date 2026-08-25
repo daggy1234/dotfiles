@@ -1,0 +1,6 @@
+{
+	"settings": {
+		"python.analysis.typeCheckingMode": "standard",
+		"python.pythonPath": "/opt/homebrew/opt/python3/libexec/bin/python",
+	},
+}
