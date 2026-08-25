@@ -1,0 +1,10 @@
+[
+  {
+    "label": "Ghostty here",
+    // ghostty --help: launching the emulator from the CLI is unsupported on macOS
+    "command": "open",
+    "args": ["-na", "Ghostty.app", "--args", "--working-directory=$ZED_DIRNAME"],
+    "reveal": "never",
+    "hide": "always"
+  }
+]

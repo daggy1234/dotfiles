@@ -1,0 +1,11 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // IntelliJ "Search Everywhere"; fires on key release, not press
+      "shift shift": "file_finder::Toggle",
+      // overrides SublimeText base_keymap's "reopen closed tab"
+      "cmd-shift-t": ["task::Spawn", { "task_name": "Ghostty here" }]
+    }
+  }
+]

@@ -1,0 +1,19 @@
+{
+	"ignored_packages":
+	[
+		"Rust",
+		"Vintage",
+		"RainbowIndent",
+	],
+	"draw_indent_guides": true,
+	"indent_guide_options": ["draw_normal", "draw_active"],
+	// "color_scheme": "Packages/ayu/ayu-mirage.sublime-color-scheme",
+	// "theme": "ayu-mirage.sublime-theme",
+	"font_size": 12,
+	"font_face": "JetBrains Mono",
+	"close_windows_when_empty": false,
+	"translate_tabs_to_spaces": false,
+	"color_scheme": "Packages/ayu/ayu-mirage.sublime-color-scheme",
+	"theme": "ayu-mirage.sublime-theme",
+	"index_files": true,
+}

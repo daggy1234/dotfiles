@@ -1,0 +1,77 @@
+[
+    {
+        "keys":
+        [
+            "super+r"
+        ],
+        "command": "show_panel",
+        "args":
+        {
+            "panel": "replace",
+            "reverse": false
+        }
+    },
+    {
+        "keys":
+        [
+            "super+h"
+        ],
+        "command": "show_overlay",
+        "args":
+        {
+            "overlay": "goto",
+            "text": "@"
+        }
+    },
+    {
+        "command": "lsp_hover",
+        "keys":
+        [
+            "super+alt+/"
+        ],
+        "context":
+        [
+            {
+                "key": "lsp.session_with_capability",
+                "operator": "equal",
+                "operand": "hoverProvider"
+            }
+        ]
+    },
+    {
+        "keys":
+        [
+            "super+shift+t"
+        ],
+        "command": "open_ghostty"
+    },
+    {
+        "keys":
+        [
+            "ctrl+`"
+        ],
+        "command": "toggle_terminus_panel",
+        "args":
+        {
+            "cwd": "${file_path:${folder}}"
+        }
+    },
+    {
+        "keys":
+        [
+            "super+alt+t"
+        ],
+        "command": "terminus_open",
+        "args":
+        {
+            "cwd": "${file_path:${folder}}"
+        }
+    },
+    {
+        "keys":
+        [
+            "super+d"
+        ],
+        "command": "dash_doc",
+    }
+]

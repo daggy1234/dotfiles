@@ -1,0 +1,101 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "base_keymap": "SublimeText",
+
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_size": 16,
+  "ui_font_size": 16,
+
+  "theme": {
+    "mode": "dark",
+    "light": "Ayu Light",
+    "dark": "Ayu Mirage"
+  },
+  "icon_theme": "Catppuccin Mocha",
+
+  "project_panel": { "dock": "left" },
+  "outline_panel": { "dock": "left" },
+  "collaboration_panel": { "dock": "left" },
+  "git_panel": { "dock": "left" },
+
+  // panel stays available for Claude Code over ACP, just not in your face
+  "agent": {
+    "dock": "right",
+    "button": false,
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "edit_predictions": { "provider": "zed" },
+  "show_edit_predictions": false,
+
+  "minimap": {
+    "show": "always",
+    "display_in": "active_editor",
+    "thumb": "always",
+    "thumb_border": "left_open",
+    "max_width_columns": 80
+  },
+
+  // plain vertical lines; "indent_aware" would color them by depth
+  "indent_guides": {
+    "enabled": true,
+    "line_width": 1,
+    "active_line_width": 2,
+    "coloring": "fixed",
+    "background_coloring": "disabled"
+  },
+
+  "colorize_brackets": true,
+
+  "terminal": {
+    "shell": "system",
+    "font_family": "JetBrains Mono",
+    "font_size": 14,
+    "working_directory": "current_file_directory",
+    "dock": "bottom"
+  },
+
+  "format_on_save": "off",
+
+  "auto_install_extensions": {
+    // themes + icons
+    "ayu-theme": true,
+    "material-theme": true,
+    "catppuccin-icons": true,
+    // languages
+    "dart": true,
+    "elixir": true,
+    "vue": true,
+    "graphql": true,
+    "prisma": true,
+    "prolog": true,
+    "powershell": true,
+    "proto": true,
+    "textproto": true,
+    "toml": true,
+    "html": true,
+    "csv": true,
+    "rainbow-csv": true,
+    "dockerfile": true,
+    "docker-compose": true,
+    "env": true,
+    "org": true,
+    "assembly": true,
+    // tooling
+    "emmet": true,
+    "git-firefly": true,
+    "color-highlight": true,
+    "emoji-completions": true,
+    "python-autodoc-lsp": true,
+    "live-server": true,
+    "discord-presence": true,
+    "wakatime": true
+  }
+}

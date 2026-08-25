@@ -1,0 +1,6 @@
+{
+	"details": "{file} | {sizehf} | {loc} lines",
+	"state": " Project: {project}",
+	"start_state": "Idling",
+	"log_level": "error"
+}

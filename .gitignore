@@ -1,1 +1,12 @@
 .claude/*
+
+# contains a GitHub PAT in plaintext
+SyncSettings.sublime-settings
+
+# generated / machine-local
+*.cache/
+Terminus.hidden-color-scheme
+Package Control.user-ca-bundle
+OrgExtended_image_cache.yaml
+Projects/
+*.sublime-workspace
