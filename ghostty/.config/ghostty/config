@@ -1,0 +1,9 @@
+# matches Zed/Sublime ayu-mirage; both themes ship with ghostty
+theme = light:Ayu Light,dark:Ayu Mirage
+
+# powerlevel10k glyphs need a Nerd Font
+font-family = MesloLGS NF
+font-size = 14
+
+macos-titlebar-style = tabs
+window-save-state = always

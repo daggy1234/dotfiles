@@ -16,7 +16,7 @@
   "theme": {
     "mode": "dark",
     "light": "Ayu Light",
-    "dark": "Ayu Mirage"
+    "dark": "Ayu Mirage",
   },
   "icon_theme": "Catppuccin Mocha",
 
@@ -29,7 +29,7 @@
     "dock": "right",
     "button": true,
     "favorite_models": [],
-    "model_parameters": []
+    "model_parameters": [],
   },
   "edit_predictions": { "provider": "zed" },
   "show_edit_predictions": false,
@@ -39,7 +39,7 @@
     "display_in": "active_editor",
     "thumb": "always",
     "thumb_border": "left_open",
-    "max_width_columns": 80
+    "max_width_columns": 80,
   },
 
   // plain vertical lines; "indent_aware" would color them by depth
@@ -48,7 +48,7 @@
     "line_width": 1,
     "active_line_width": 2,
     "coloring": "fixed",
-    "background_coloring": "disabled"
+    "background_coloring": "disabled",
   },
 
   "colorize_brackets": true,
@@ -59,23 +59,25 @@
     "font_family": "MesloLGS NF",
     "font_size": 14,
     "working_directory": "current_file_directory",
-    "dock": "bottom"
+    "dock": "bottom",
   },
 
   "format_on_save": "on",
 
   "languages": {
     "Python": {
-      "formatter": { "external": { "command": "autopep8", "arguments": ["-"] } },
+      "formatter": {
+        "external": { "command": "autopep8", "arguments": ["-"] },
+      },
       // ruff hijacks import sorting on format unless disabled
-      "code_actions_on_format": { "source.organizeImports.ruff": false }
+      "code_actions_on_format": { "source.organizeImports.ruff": false },
     },
     "Rust": { "formatter": "language_server" },
     "JavaScript": { "formatter": "prettier" },
     "TypeScript": { "formatter": "prettier" },
     "TSX": { "formatter": "prettier" },
     "JSON": { "formatter": "prettier" },
-    "C++": { "formatter": "language_server" }
+    "C++": { "formatter": "language_server" },
   },
 
   "lsp": {
@@ -83,13 +85,13 @@
       "initialization_options": {
         "checkOnSave": true,
         "check": { "command": "clippy", "allTargets": true },
-        "cargo": { "allFeatures": true }
-      }
+        "cargo": { "allFeatures": true },
+      },
     },
     "basedpyright": {
       "settings": {
-        "basedpyright.analysis": { "typeCheckingMode": "standard" }
-      }
+        "basedpyright.analysis": { "typeCheckingMode": "standard" },
+      },
     },
     "yaml-language-server": {
       "settings": {
@@ -110,11 +112,11 @@
             "!GetAZs",
             "!ImportValue sequence",
             "!Select sequence",
-            "!Split sequence"
-          ]
-        }
-      }
-    }
+            "!Split sequence",
+          ],
+        },
+      },
+    },
   },
 
   // off by default; none of semantic_token_rules fires without this
@@ -122,40 +124,114 @@
   "global_lsp_settings": {
     // first match wins, so modifier rules must precede bare type rules
     "semantic_token_rules": [
-      { "token_type": "variable", "token_modifiers": ["unsafe"], "foreground_color": "#ff0000", "font_weight": 700 },
-      { "token_type": "operator", "token_modifiers": ["unsafe"], "foreground_color": "#ff0000", "font_weight": 700 },
-      { "token_type": "function", "token_modifiers": ["unsafe"], "foreground_color": "#ff0000", "font_weight": 700 },
-      { "token_type": "method", "token_modifiers": ["unsafe"], "foreground_color": "#ff0000", "font_weight": 700 },
+      {
+        "token_type": "variable",
+        "token_modifiers": ["unsafe"],
+        "foreground_color": "#ff0000",
+        "font_weight": "bold",
+      },
+      {
+        "token_type": "operator",
+        "token_modifiers": ["unsafe"],
+        "foreground_color": "#ff0000",
+        "font_weight": "bold",
+      },
+      {
+        "token_type": "function",
+        "token_modifiers": ["unsafe"],
+        "foreground_color": "#ff0000",
+        "font_weight": "bold",
+      },
+      {
+        "token_type": "method",
+        "token_modifiers": ["unsafe"],
+        "foreground_color": "#ff0000",
+        "font_weight": "bold",
+      },
 
-      { "token_type": "parameter", "token_modifiers": ["mutable"], "font_style": "italic" },
-      { "token_type": "function", "token_modifiers": ["mutable"], "foreground_color": "#ffc039" },
-      { "token_type": "variable", "token_modifiers": ["mutable"], "font_style": "italic" },
+      {
+        "token_type": "parameter",
+        "token_modifiers": ["mutable"],
+        "font_style": "italic",
+      },
+      {
+        "token_type": "function",
+        "token_modifiers": ["mutable"],
+        "foreground_color": "#ffc039",
+      },
+      {
+        "token_type": "variable",
+        "token_modifiers": ["mutable"],
+        "font_style": "italic",
+      },
 
-      { "token_type": "variable", "token_modifiers": ["consuming"], "underline": true },
-      { "token_type": "parameter", "token_modifiers": ["consuming"], "underline": true },
-      { "token_type": "method", "token_modifiers": ["consuming"], "underline": true },
+      {
+        "token_type": "variable",
+        "token_modifiers": ["consuming"],
+        "underline": true,
+      },
+      {
+        "token_type": "parameter",
+        "token_modifiers": ["consuming"],
+        "underline": true,
+      },
+      {
+        "token_type": "method",
+        "token_modifiers": ["consuming"],
+        "underline": true,
+      },
 
-      { "token_type": "function", "token_modifiers": ["defaultLibrary"], "foreground_color": "#A6E22E" },
-      { "token_type": "method", "token_modifiers": ["defaultLibrary"], "foreground_color": "#A6E22E" },
-      { "token_type": "variable", "token_modifiers": ["static"], "foreground_color": "#A477F6", "font_weight": 700, "font_style": "italic" },
-      { "token_type": "variable", "token_modifiers": ["constant"], "foreground_color": "#A477F6" },
+      {
+        "token_type": "function",
+        "token_modifiers": ["defaultLibrary"],
+        "foreground_color": "#A6E22E",
+      },
+      {
+        "token_type": "method",
+        "token_modifiers": ["defaultLibrary"],
+        "foreground_color": "#A6E22E",
+      },
+      {
+        "token_type": "variable",
+        "token_modifiers": ["static"],
+        "foreground_color": "#A477F6",
+        "font_weight": "bold",
+        "font_style": "italic",
+      },
+      {
+        "token_type": "variable",
+        "token_modifiers": ["constant"],
+        "foreground_color": "#A477F6",
+      },
 
       { "token_type": "builtinType", "foreground_color": "#66D9EF" },
       { "token_type": "type", "foreground_color": "#66D9EF" },
       { "token_type": "struct", "foreground_color": "#66D9EF" },
       { "token_type": "typeAlias", "foreground_color": "#66D9EF" },
-      { "token_type": "enum", "foreground_color": "#66D9EF", "font_style": "italic" },
-      { "token_type": "typeParameter", "foreground_color": "#66D9EF", "underline": true },
+      {
+        "token_type": "enum",
+        "foreground_color": "#66D9EF",
+        "font_style": "italic",
+      },
+      {
+        "token_type": "typeParameter",
+        "foreground_color": "#66D9EF",
+        "underline": true,
+      },
       { "token_type": "interface", "foreground_color": "#ff8800" },
       { "token_type": "property", "foreground_color": "#e7ffb8" },
       { "token_type": "enumMember", "foreground_color": "#f397ff" },
       { "token_type": "namespace", "foreground_color": "#57ffbf" },
-      { "token_type": "macro", "foreground_color": "#ffff00", "font_weight": 700 },
+      {
+        "token_type": "macro",
+        "foreground_color": "#ffff00",
+        "font_weight": "bold",
+      },
       { "token_type": "lifetime", "foreground_color": "#ff3b3b" },
       { "token_type": "attribute", "foreground_color": "#67DA5A" },
       { "token_type": "operator", "foreground_color": "#F92672" },
-      { "token_type": "unresolvedReference", "foreground_color": "#caa87f" }
-    ]
+      { "token_type": "unresolvedReference", "foreground_color": "#caa87f" },
+    ],
   },
 
   "theme_overrides": {
@@ -168,14 +244,14 @@
         "namespace": { "color": "#57ffbf" },
         "attribute": { "color": "#67DA5A" },
         "operator": { "color": "#F92672" },
-        "punctuation": { "color": "#F8F8F2" }
-      }
-    }
+        "punctuation": { "color": "#F8F8F2" },
+      },
+    },
   },
 
   "file_types": {
     "Rust": ["*.rs"],
-    "Python": ["*.py"]
+    "Python": ["*.py"],
   },
 
   "auto_install_extensions": {
@@ -210,6 +286,6 @@
     "python-autodoc-lsp": true,
     "live-server": true,
     "discord-presence": true,
-    "wakatime": true
-  }
+    "wakatime": true,
+  },
 }
